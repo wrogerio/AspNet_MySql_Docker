@@ -6,7 +6,7 @@ networks:
 
 services:
   web:
-    container_name: "web-container"
+    container_name: "produtos-web"
     build: .
     ports:
       - "8080:80"

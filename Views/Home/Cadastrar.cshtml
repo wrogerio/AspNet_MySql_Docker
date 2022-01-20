@@ -1,0 +1,45 @@
+﻿@model MySqlNet.Models.Produto
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="row mb-2">
+    <div class="col">
+        <h2>Cadastrar novo Produto</h2>
+    </div>
+</div>
+
+
+<form method="post" asp-action="Cadastrar">
+    <div class="row">
+        <div class="col-3">
+            <div class="form-group">
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" value="" class="form-control" />
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label asp-for="Descricao"></label>
+                <input asp-for="Descricao" value="" class="form-control" />
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="form-group">
+                <label asp-for="Valor"></label>
+                <input asp-for="Valor" value="" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <input type="submit" name="name" value="Cadastrar" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a asp-action="Index">Voltar</a>
+        </div>
+    </div>
+</form>
